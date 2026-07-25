@@ -1,0 +1,9 @@
+[versions]
+gson = "2.10.1"
+junit = "4.13.2"
+kotlinxCoroutines = "1.7.3"
+
+[libraries]
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }

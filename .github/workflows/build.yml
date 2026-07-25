@@ -32,19 +32,36 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build all extensions (makeCloudstreamPlugin)
-        run: ./gradlew makeCloudstreamPlugin --no-daemon --stacktrace
-        continue-on-error: true
-
-      - name: Collect built .cs3 files
+      - name: Build each extension individually
         run: |
           mkdir -p builds
-          echo "=== Searching for .cs3 files ==="
-          find . -name "*.cs3" -type f 2>/dev/null
-          echo "=== Copying .cs3 files ==="
-          find . -name "*.cs3" -type f -exec cp {} builds/ \; 2>/dev/null
-          echo "=== Files in builds/ ==="
-          ls -la builds/ || echo "No files found"
+          SUCCESS=0
+          FAILED=0
+          for dir in */; do
+            if [ -f "${dir}build.gradle.kts" ]; then
+              NAME=$(basename "$dir")
+              echo "=== Building $NAME ==="
+              if ./gradlew ":${NAME}:makeCloudstreamPlugin" --no-daemon -q 2>/dev/null; then
+                # Find and copy .cs3 file
+                find "${dir}build" -name "*.cs3" -exec cp {} "builds/${NAME}.cs3" \; 2>/dev/null
+                if [ -f "builds/${NAME}.cs3" ]; then
+                  echo "  ✓ Built ${NAME}.cs3 ($(stat -c%s builds/${NAME}.cs3) bytes)"
+                  SUCCESS=$((SUCCESS+1))
+                else
+                  echo "  ⚠ Built but no .cs3 found for $NAME"
+                  FAILED=$((FAILED+1))
+                fi
+              else
+                echo "  ✗ Failed to build $NAME"
+                FAILED=$((FAILED+1))
+              fi
+            fi
+          done
+          echo ""
+          echo "=== Build Summary ==="
+          echo "Success: $SUCCESS"
+          echo "Failed: $FAILED"
+          echo "Total .cs3 files: $(ls builds/*.cs3 2>/dev/null | wc -l)"
 
       - name: Generate plugins.json with hashes
         run: |
