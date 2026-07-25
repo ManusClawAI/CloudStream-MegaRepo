@@ -32,17 +32,18 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build all extensions
-        run: ./gradlew assembleDebug --no-daemon --stacktrace
+      - name: Build all extensions (makeCloudstreamPlugin)
+        run: ./gradlew makeCloudstreamPlugin --no-daemon --stacktrace
         continue-on-error: true
 
-      - name: Collect built .cs3 and .jar files
+      - name: Collect built .cs3 files
         run: |
           mkdir -p builds
-          find . -name "*.cs3" -exec cp {} builds/ \; 2>/dev/null
-          find . -path "*/build/outputs/*.jar" -exec cp {} builds/ \; 2>/dev/null
-          find . -path "*/build/libs/*.jar" -exec cp {} builds/ \; 2>/dev/null
-          echo "Files in builds:"
+          echo "=== Searching for .cs3 files ==="
+          find . -name "*.cs3" -type f 2>/dev/null
+          echo "=== Copying .cs3 files ==="
+          find . -name "*.cs3" -type f -exec cp {} builds/ \; 2>/dev/null
+          echo "=== Files in builds/ ==="
           ls -la builds/ || echo "No files found"
 
       - name: Generate plugins.json with hashes
@@ -50,7 +51,6 @@ jobs:
           python3 << 'PYEOF'
           import json, hashlib, os, glob
           
-          plugins = []
           builds_dir = "builds"
           
           with open("plugins.json", "r") as f:
@@ -59,18 +59,15 @@ jobs:
           meta_lookup = {p["internalName"]: p for p in existing}
           
           cs3_files = glob.glob(os.path.join(builds_dir, "*.cs3"))
-          jar_files = glob.glob(os.path.join(builds_dir, "*.jar"))
-          
           print(f"Found {len(cs3_files)} .cs3 files")
-          print(f"Found {len(jar_files)} .jar files")
           
+          plugins = []
           for cs3 in sorted(cs3_files):
               name = os.path.basename(cs3).replace(".cs3", "")
               meta = meta_lookup.get(name, {})
               
               with open(cs3, "rb") as f:
                   file_hash = hashlib.sha256(f.read()).hexdigest()
-              
               file_size = os.path.getsize(cs3)
               
               plugin = {
@@ -88,19 +85,10 @@ jobs:
                   "fileHash": f"sha256-{file_hash}",
                   "url": f"https://raw.githubusercontent.com/ManusClawAI/CloudStream-MegaRepo/builds/{name}.cs3",
               }
-              
-              jar_path = os.path.join(builds_dir, f"{name}.jar")
-              if os.path.exists(jar_path):
-                  with open(jar_path, "rb") as f:
-                      jar_hash = hashlib.sha256(f.read()).hexdigest()
-                  plugin["jarFileSize"] = os.path.getsize(jar_path)
-                  plugin["jarHash"] = f"sha256-{jar_hash}"
-                  plugin["jarUrl"] = f"https://raw.githubusercontent.com/ManusClawAI/CloudStream-MegaRepo/builds/{name}.jar"
-              
               plugins.append(plugin)
           
           if not plugins:
-              print("No built files found, keeping metadata-only plugins.json")
+              print("No built .cs3 files found — using metadata-only plugins.json")
               plugins = existing
           
           with open(os.path.join(builds_dir, "plugins.json"), "w") as f:
