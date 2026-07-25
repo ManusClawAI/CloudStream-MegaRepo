@@ -29,16 +29,22 @@ jobs:
         with:
           validate-wrappers: false
 
+      - name: Create local.properties
+        run: |
+          cat > local.properties << 'LPEOF'
+          SIMKL_API=
+          TMDB_KEY=
+          CC_COOKIE=
+          CASTLE_KEY=
+          MOVIEBLAST_TOKEN=
+          MOVIEBLAST_API=
+          MOVIEBLAST_KEY=
+          LPEOF
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: List available gradle tasks (first extension only)
-        run: |
-          FIRST_DIR=$(ls -d */ | head -1 | tr -d '/')
-          echo "=== First extension: $FIRST_DIR ==="
-          ./gradlew ":${FIRST_DIR}:tasks" --no-daemon 2>&1 | head -50 || true
-
-      - name: Build all extensions with makeCloudstreamPlugin
+      - name: Build all extensions
         run: |
           mkdir -p builds
           SUCCESS=0
@@ -46,35 +52,29 @@ jobs:
           for dir in */; do
             if [ -f "${dir}build.gradle.kts" ]; then
               NAME=$(basename "$dir")
-              echo "=== Building $NAME ==="
-              OUTPUT=$(./gradlew ":${NAME}:makeCloudstreamPlugin" --no-daemon 2>&1) 
+              OUTPUT=$(./gradlew ":${NAME}:makeCloudstreamPlugin" --no-daemon 2>&1)
               if echo "$OUTPUT" | grep -q "BUILD SUCCESSFUL"; then
                 find "${dir}build" -name "*.cs3" -exec cp {} "builds/${NAME}.cs3" \; 2>/dev/null
                 if [ -f "builds/${NAME}.cs3" ]; then
-                  echo "  ✓ Built ${NAME}.cs3 ($(stat -c%s builds/${NAME}.cs3) bytes)"
+                  echo "✓ ${NAME}.cs3 ($(stat -c%s builds/${NAME}.cs3) bytes)"
                   SUCCESS=$((SUCCESS+1))
                 else
-                  echo "  ⚠ Built but no .cs3 found for $NAME"
+                  echo "⚠ ${NAME} built but no .cs3"
                   FAILED=$((FAILED+1))
                 fi
               else
-                echo "  ✗ Failed to build $NAME"
-                echo "$OUTPUT" | tail -5
+                echo "✗ ${NAME}"
                 FAILED=$((FAILED+1))
               fi
             fi
           done
-          echo ""
-          echo "=== Build Summary ==="
-          echo "Success: $SUCCESS"
-          echo "Failed: $FAILED"
+          echo "=== Success: $SUCCESS, Failed: $FAILED ==="
           echo "Total .cs3 files: $(ls builds/*.cs3 2>/dev/null | wc -l)"
 
-      - name: Generate plugins.json with hashes
+      - name: Generate plugins.json
         run: |
           python3 << 'PYEOF'
           import json, hashlib, os, glob
-          
           builds_dir = "builds"
           with open("plugins.json", "r") as f:
               existing = json.load(f)
@@ -103,11 +103,11 @@ jobs:
               }
               plugins.append(plugin)
           if not plugins:
-              print("No built .cs3 files — using metadata-only plugins.json")
+              print("No .cs3 files — metadata-only")
               plugins = existing
           with open(os.path.join(builds_dir, "plugins.json"), "w") as f:
               json.dump(plugins, f, indent=4)
-          print(f"Generated builds/plugins.json with {len(plugins)} plugins")
+          print(f"plugins.json: {len(plugins)} plugins")
           PYEOF
 
       - name: Push to builds branch
@@ -118,13 +118,11 @@ jobs:
           git rm -rf .
           cp -r builds/* . 2>/dev/null || true
           git add -A
-          git commit -m "Build extensions — $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "Build — $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push origin builds --force
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: CloudStream-MegaRepo-builds
           path: builds/
           if-no-files-found: warn
-          retention-days: 30
