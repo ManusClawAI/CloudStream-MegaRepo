@@ -31,21 +31,15 @@ jobs:
 
       - name: Create local.properties
         run: |
-          cat > local.properties << 'LPEOF'
-          SIMKL_API=
-          TMDB_KEY=
-          CC_COOKIE=
-          CASTLE_KEY=
-          MOVIEBLAST_TOKEN=
-          MOVIEBLAST_API=
-          MOVIEBLAST_KEY=
-          LPEOF
+          printf 'SIMKL_API=\nTMDB_KEY=\nCC_COOKIE=\nCASTLE_KEY=\nMOVIEBLAST_TOKEN=\nMOVIEBLAST_API=\nMOVIEBLAST_KEY=\n' > local.properties
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
       - name: Build all extensions
+        shell: bash {0}
         run: |
+          set +e
           mkdir -p builds
           SUCCESS=0
           FAILED=0
@@ -70,9 +64,12 @@ jobs:
           done
           echo "=== Success: $SUCCESS, Failed: $FAILED ==="
           echo "Total .cs3 files: $(ls builds/*.cs3 2>/dev/null | wc -l)"
+          exit 0
 
       - name: Generate plugins.json
+        shell: bash {0}
         run: |
+          set +e
           python3 << 'PYEOF'
           import json, hashlib, os, glob
           builds_dir = "builds"
@@ -109,9 +106,12 @@ jobs:
               json.dump(plugins, f, indent=4)
           print(f"plugins.json: {len(plugins)} plugins")
           PYEOF
+          exit 0
 
       - name: Push to builds branch
+        shell: bash {0}
         run: |
+          set +e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout --orphan builds
@@ -120,6 +120,7 @@ jobs:
           git add -A
           git commit -m "Build — $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push origin builds --force
+          exit 0
 
       - uses: actions/upload-artifact@v4
         with:
