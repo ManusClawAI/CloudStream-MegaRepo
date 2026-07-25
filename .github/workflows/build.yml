@@ -32,7 +32,13 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build each extension individually
+      - name: List available gradle tasks (first extension only)
+        run: |
+          FIRST_DIR=$(ls -d */ | head -1 | tr -d '/')
+          echo "=== First extension: $FIRST_DIR ==="
+          ./gradlew ":${FIRST_DIR}:tasks" --no-daemon 2>&1 | head -50 || true
+
+      - name: Build all extensions with makeCloudstreamPlugin
         run: |
           mkdir -p builds
           SUCCESS=0
@@ -41,8 +47,8 @@ jobs:
             if [ -f "${dir}build.gradle.kts" ]; then
               NAME=$(basename "$dir")
               echo "=== Building $NAME ==="
-              if ./gradlew ":${NAME}:makeCloudstreamPlugin" --no-daemon -q 2>/dev/null; then
-                # Find and copy .cs3 file
+              OUTPUT=$(./gradlew ":${NAME}:makeCloudstreamPlugin" --no-daemon 2>&1) 
+              if echo "$OUTPUT" | grep -q "BUILD SUCCESSFUL"; then
                 find "${dir}build" -name "*.cs3" -exec cp {} "builds/${NAME}.cs3" \; 2>/dev/null
                 if [ -f "builds/${NAME}.cs3" ]; then
                   echo "  ✓ Built ${NAME}.cs3 ($(stat -c%s builds/${NAME}.cs3) bytes)"
@@ -53,6 +59,7 @@ jobs:
                 fi
               else
                 echo "  ✗ Failed to build $NAME"
+                echo "$OUTPUT" | tail -5
                 FAILED=$((FAILED+1))
               fi
             fi
@@ -69,27 +76,20 @@ jobs:
           import json, hashlib, os, glob
           
           builds_dir = "builds"
-          
           with open("plugins.json", "r") as f:
               existing = json.load(f)
-          
           meta_lookup = {p["internalName"]: p for p in existing}
-          
           cs3_files = glob.glob(os.path.join(builds_dir, "*.cs3"))
           print(f"Found {len(cs3_files)} .cs3 files")
-          
           plugins = []
           for cs3 in sorted(cs3_files):
               name = os.path.basename(cs3).replace(".cs3", "")
               meta = meta_lookup.get(name, {})
-              
               with open(cs3, "rb") as f:
                   file_hash = hashlib.sha256(f.read()).hexdigest()
               file_size = os.path.getsize(cs3)
-              
               plugin = {
-                  "internalName": name,
-                  "name": meta.get("name", name),
+                  "internalName": name, "name": meta.get("name", name),
                   "description": meta.get("description", ""),
                   "authors": meta.get("authors", ["Unknown"]),
                   "status": meta.get("status", 3),
@@ -97,20 +97,16 @@ jobs:
                   "version": meta.get("version", 1),
                   "iconUrl": meta.get("iconUrl", ""),
                   "repositoryUrl": "https://github.com/ManusClawAI/CloudStream-MegaRepo",
-                  "apiVersion": 1,
-                  "fileSize": file_size,
+                  "apiVersion": 1, "fileSize": file_size,
                   "fileHash": f"sha256-{file_hash}",
                   "url": f"https://raw.githubusercontent.com/ManusClawAI/CloudStream-MegaRepo/builds/{name}.cs3",
               }
               plugins.append(plugin)
-          
           if not plugins:
-              print("No built .cs3 files found — using metadata-only plugins.json")
+              print("No built .cs3 files — using metadata-only plugins.json")
               plugins = existing
-          
           with open(os.path.join(builds_dir, "plugins.json"), "w") as f:
               json.dump(plugins, f, indent=4)
-          
           print(f"Generated builds/plugins.json with {len(plugins)} plugins")
           PYEOF
 
