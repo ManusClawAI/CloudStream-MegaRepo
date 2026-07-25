@@ -1,0 +1,129 @@
+name: Build All Extensions
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: temurin
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          validate-wrappers: false
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build all extensions
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
+        continue-on-error: true
+
+      - name: Collect built .cs3 and .jar files
+        run: |
+          mkdir -p builds
+          find . -name "*.cs3" -exec cp {} builds/ \; 2>/dev/null
+          find . -path "*/build/outputs/*.jar" -exec cp {} builds/ \; 2>/dev/null
+          find . -path "*/build/libs/*.jar" -exec cp {} builds/ \; 2>/dev/null
+          echo "Files in builds:"
+          ls -la builds/ || echo "No files found"
+
+      - name: Generate plugins.json with hashes
+        run: |
+          python3 << 'PYEOF'
+          import json, hashlib, os, glob
+          
+          plugins = []
+          builds_dir = "builds"
+          
+          with open("plugins.json", "r") as f:
+              existing = json.load(f)
+          
+          meta_lookup = {p["internalName"]: p for p in existing}
+          
+          cs3_files = glob.glob(os.path.join(builds_dir, "*.cs3"))
+          jar_files = glob.glob(os.path.join(builds_dir, "*.jar"))
+          
+          print(f"Found {len(cs3_files)} .cs3 files")
+          print(f"Found {len(jar_files)} .jar files")
+          
+          for cs3 in sorted(cs3_files):
+              name = os.path.basename(cs3).replace(".cs3", "")
+              meta = meta_lookup.get(name, {})
+              
+              with open(cs3, "rb") as f:
+                  file_hash = hashlib.sha256(f.read()).hexdigest()
+              
+              file_size = os.path.getsize(cs3)
+              
+              plugin = {
+                  "internalName": name,
+                  "name": meta.get("name", name),
+                  "description": meta.get("description", ""),
+                  "authors": meta.get("authors", ["Unknown"]),
+                  "status": meta.get("status", 3),
+                  "tvTypes": meta.get("tvTypes", ["Others"]),
+                  "version": meta.get("version", 1),
+                  "iconUrl": meta.get("iconUrl", ""),
+                  "repositoryUrl": "https://github.com/ManusClawAI/CloudStream-MegaRepo",
+                  "apiVersion": 1,
+                  "fileSize": file_size,
+                  "fileHash": f"sha256-{file_hash}",
+                  "url": f"https://raw.githubusercontent.com/ManusClawAI/CloudStream-MegaRepo/builds/{name}.cs3",
+              }
+              
+              jar_path = os.path.join(builds_dir, f"{name}.jar")
+              if os.path.exists(jar_path):
+                  with open(jar_path, "rb") as f:
+                      jar_hash = hashlib.sha256(f.read()).hexdigest()
+                  plugin["jarFileSize"] = os.path.getsize(jar_path)
+                  plugin["jarHash"] = f"sha256-{jar_hash}"
+                  plugin["jarUrl"] = f"https://raw.githubusercontent.com/ManusClawAI/CloudStream-MegaRepo/builds/{name}.jar"
+              
+              plugins.append(plugin)
+          
+          if not plugins:
+              print("No built files found, keeping metadata-only plugins.json")
+              plugins = existing
+          
+          with open(os.path.join(builds_dir, "plugins.json"), "w") as f:
+              json.dump(plugins, f, indent=4)
+          
+          print(f"Generated builds/plugins.json with {len(plugins)} plugins")
+          PYEOF
+
+      - name: Push to builds branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan builds
+          git rm -rf .
+          cp -r builds/* . 2>/dev/null || true
+          git add -A
+          git commit -m "Build extensions — $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push origin builds --force
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: CloudStream-MegaRepo-builds
+          path: builds/
+          if-no-files-found: warn
+          retention-days: 30

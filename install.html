@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudStream MegaRepo — One Click Install</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e0e0e0; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .container { text-align: center; max-width: 600px; padding: 40px; }
+        h1 { font-size: 2.5em; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2em; color: #888; margin-bottom: 30px; }
+        .stats { display: flex; justify-content: center; gap: 30px; margin-bottom: 40px; flex-wrap: wrap; }
+        .stat { background: #1a1a2e; padding: 20px 30px; border-radius: 12px; border: 1px solid #333; }
+        .stat-num { font-size: 2em; font-weight: bold; color: #667eea; }
+        .stat-label { font-size: 0.9em; color: #666; }
+        .btn { display: inline-block; padding: 18px 40px; font-size: 1.3em; font-weight: bold; color: white; background: linear-gradient(135deg, #667eea, #764ba2); border: none; border-radius: 50px; cursor: pointer; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+        .btn:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4); }
+        .url-box { margin-top: 30px; background: #1a1a2e; padding: 15px; border-radius: 8px; border: 1px solid #333; word-break: break-all; font-family: monospace; color: #667eea; }
+        .instructions { margin-top: 30px; text-align: left; background: #1a1a2e; padding: 20px; border-radius: 12px; border: 1px solid #333; }
+        .instructions h3 { color: #667eea; margin-top: 0; }
+        .instructions ol { line-height: 1.8; }
+        .instructions code { background: #0f0f1a; padding: 2px 8px; border-radius: 4px; color: #764ba2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CloudStream MegaRepo</h1>
+        <p class="subtitle">352 Extensions from 31 Source Repos — All in One Place</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-num">352</div>
+                <div class="stat-label">Extensions</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">31</div>
+                <div class="stat-label">Source Repos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">0</div>
+                <div class="stat-label">Duplicates</div>
+            </div>
+        </div>
+        
+        <a href="cloudstream://repo/https://github.com/ManusClawAI/CloudStream-MegaRepo" class="btn">⚡ One-Click Install</a>
+        
+        <div class="url-box">
+            cloudstream://repo/https://github.com/ManusClawAI/CloudStream-MegaRepo
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 Manual Installation</h3>
+            <ol>
+                <li>Open <strong>CloudStream</strong> app</li>
+                <li>Go to <strong>Settings → Extensions</strong></li>
+                <li>Tap <strong>Add repository</strong></li>
+                <li>Paste: <code>https://github.com/ManusClawAI/CloudStream-MegaRepo</code></li>
+                <li>Tap <strong>OK</strong> and install extensions you want</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
