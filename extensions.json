@@ -1,0 +1,2114 @@
+[
+  {
+    "name": "AniyomiProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "AniyomiCompatExtension"
+  },
+  {
+    "name": "Anime4upPack",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "AnimeBlkomProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "AnimeiatProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "ArabSeedProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "FajerShowProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "FaselHDProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "MyCimaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "SagaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "ShoffreeProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Arabico"
+  },
+  {
+    "name": "Bollyflix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CSX"
+  },
+  {
+    "name": "CineStream",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CSX"
+  },
+  {
+    "name": "GDIndex",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CSX"
+  },
+  {
+    "name": "MoviesDrive",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CSX"
+  },
+  {
+    "name": "Moviesmod",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CSX"
+  },
+  {
+    "name": "OnlineMoviesHinditProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CSX"
+  },
+  {
+    "name": "VegaMovies",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CSX"
+  },
+  {
+    "name": "Dutamovie",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Filmkita",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Filmlokal",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Indomax",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Kawanfilm",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "KlikXXi",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "LayarWarna",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Ngefilm",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Nomat",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Pencurimovie",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Pusatfilm",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Pusatmovie",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Sarangfilm",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "Savefilm",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "WGFilm21",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CloudX"
+  },
+  {
+    "name": "AnimeSama",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CuxPlug"
+  },
+  {
+    "name": "Anizone",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CuxPlug"
+  },
+  {
+    "name": "FrenchStream",
+    "package": null,
+    "source_class": null,
+    "source_repo": "CuxPlug"
+  },
+  {
+    "name": "ARD",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Aniworld",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Arte",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "C3TV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Discovery",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "EinschaltenIn",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "FilmPalast",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "HDFilme",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "HuhuTo",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "IptvOrg",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "KinoKing",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Kinoger",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Megakino",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Moflix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Netzkino",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "PlutoTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Serienstream",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Southpark",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "SpiegelTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Welt",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Xcine",
+    "package": null,
+    "source_class": null,
+    "source_repo": "GermanProviders"
+  },
+  {
+    "name": "Animasu",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "AnimeIndo",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "AnimeSail",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Anoboy",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "DramaSerial",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Dramaid",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Dubbindo",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Funmovieslix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Gomov",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Gomunime",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Idlix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "IndoTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Kuramanime",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Kuronime",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "LayarKaca",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Minioppai",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Nekopoi",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Neonime",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Nimegami",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Nodrakorid",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "NontonAnimeID",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Oploverz",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Otakudesu",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Raveeflix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Rebahin",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "Samehadaku",
+    "package": null,
+    "source_class": null,
+    "source_repo": "IndoStream"
+  },
+  {
+    "name": "AltadefinizioneProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "AniPlayProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "AnimeSaturnProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "AnimeWorldProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "CalcioStreamingProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "CasaCinemaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "CineBlogProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "EurostreamingProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "FilmpertuttiProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "FreeTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "GuardaSerieProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "IlGenioDelloStreamingProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "IptvorgProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "SoraItalianStream",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "StreamingcommunityProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "TantiFilmProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "TvItalianaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ItalianProvider"
+  },
+  {
+    "name": "AnimeciX",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "BelgeselX",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "CanliTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "CizgiMax",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "DiziBox",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "DiziKorea",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "DiziMom",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "DiziPal",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "DiziYou",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "Dizilla",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "FilmMakinesi",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "FilmModu",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "FullHDFilm",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "FullHDFilmizlesene",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "FullPorner",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "GolgeTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "HDFilmCehennemi",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "HQPorner",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "InatBox",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "IzleAI",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "JetFilmizle",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "KoreanTurk",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "KultFilmler",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "NetflixMirror",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "OxAx",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "PornHub",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "RareFilmm",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "RecTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "SetFilmIzle",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "SezonlukDizi",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "SineWix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "SinemaCX",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "SpankBang",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "SuperFilmGeldi",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "TurkAnime",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "UgurFilm",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "UncutMaza",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "Watch2Movies",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "WebteIzle",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "YouTube",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "__Temel",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "xHamster",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Kekik-cloudstream"
+  },
+  {
+    "name": "DailymotionProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Luna712-CloudStream-Extensions"
+  },
+  {
+    "name": "InternetArchiveProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Luna712-CloudStream-Extensions"
+  },
+  {
+    "name": "MegaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "MegaRepo"
+  },
+  {
+    "name": "Netmirror",
+    "package": null,
+    "source_class": null,
+    "source_repo": "NetMirror-Extension"
+  },
+  {
+    "name": "NeonSpor",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Pitipitii"
+  },
+  {
+    "name": "9kMovies",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "BdixBdipTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "BdixCircleftp",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "BdixCloudTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "BdixDflix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "BdixDhakaFlix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "BdixICCFtp",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "BdixMyMovieBazarTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "BdixRoarZoneTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "EmwBD",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "FootReplays",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "FullReplays",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "FullyMaza",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "MoviPK",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "Mp4Moviez",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "TheMoviesFlix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "WatchMoviesPk",
+    "package": null,
+    "source_class": null,
+    "source_repo": "Redowan-CloudStream"
+  },
+  {
+    "name": "DiviCast",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ReflexRepo"
+  },
+  {
+    "name": "LibraryOfLadev",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ReflexRepo"
+  },
+  {
+    "name": "ProviderTemplate",
+    "package": null,
+    "source_class": null,
+    "source_repo": "ReflexRepo"
+  },
+  {
+    "name": "ArabicToons",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "Carateen",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "Cartoony",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "ConanAraby",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "DriveM3UProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "Egibest",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "ExampleProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "FaselHDX",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "PGMED",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "Shahid4u",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "StarDima",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cartoonyrepo"
+  },
+  {
+    "name": "BingedReview",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cinephile"
+  },
+  {
+    "name": "Cinevood",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cinephile"
+  },
+  {
+    "name": "SkymoviesHD",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cinephile"
+  },
+  {
+    "name": "Tamilblasters",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cinephile"
+  },
+  {
+    "name": "AnimeONProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "AnimeUAProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "AnitubeinuaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "BambooUAProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "BanderakinoProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "CikavaIdeyaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "CoaninetProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "DoramyWorldProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "EneyidaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "HentaiUkrProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "KinoTronProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "KinoVezhaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "KlonTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "SerialnoProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "SimpsonsUATvProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "SyncPlugin",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "UAFlixProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "UASerialsProProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "UFDubProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "UakinoProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "UnimayProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cloudstream-extensions-uk"
+  },
+  {
+    "name": "AnimeAV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "AnimeWorld",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "AnimeYTX",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "BasketballReplays",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "CinemaCity",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "DocumentaryArea",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "DoramasLatinoX",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Dramaizle",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Esheaq",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "F1FullRaces",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Filmatek",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Filmmiras\u0131m",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Flixlatam",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Footballia",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Full4kizle",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "FullRaces",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Gnulahd",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Henaojara",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Iwatchtheoffice",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "JPFilms",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "KissKH",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Krmzy",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Latanime",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Movix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Nekokun",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "OK",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Sokuja",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Streamed",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Subsplease",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Supercartoons",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "TVGarden",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "TokyBook",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "WatchWrestling",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Wcoflix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Yablom",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "YoTurkish",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "__New",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-Karma"
+  },
+  {
+    "name": "Bolly2TollyProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "CinevezProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "CricHDProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "GDJioTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "IBommaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "MHDTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "MovieModProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "NPJioTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "NollyVerseProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "PrmoviesProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "SnehIPTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "SoraJioTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "StreamBlastersProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "UWatchFreeProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "cs-darkdemon-extensions"
+  },
+  {
+    "name": "AltaDefinizione",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "AnimeUnity",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "CB01",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "CalcioStreaming",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "CorsaroNero",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "DaddyLive",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "Huhu",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "IPTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "IlCorsaroViola",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "Nebula",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "OnlineSerieTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "SimklProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "StreamCenter",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "StreamingCommunity",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "TV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "Torrentio",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "Vavoo",
+    "package": null,
+    "source_class": null,
+    "source_repo": "doGiorsHadEnough"
+  },
+  {
+    "name": "InvidiousProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "extensions"
+  },
+  {
+    "name": "TwitchProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "extensions"
+  },
+  {
+    "name": "YoutubeProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "extensions"
+  },
+  {
+    "name": "AniTube",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "AnimeFire",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "CineAgora",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "DattebayoBR",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "Doramogo",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "EmbedTV",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "Goyabu",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "MendigoFlix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "PobreFlix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "ReiDosEmbeds",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "StreamFlix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "lietrepo"
+  },
+  {
+    "name": "3isk",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Aia2tv",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Aia2tv 2",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Akwam",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Anim3rb",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Anime4up",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Animeiat",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Animerco",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Animewitcher",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Arabseed",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Bristege",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Cee",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "CimaClub",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Cimalight",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Cimatn",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Cimawbas",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Egydead",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Faselhd",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Lodynet",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Ohatv",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Replaymatch",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Syria-live",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "TVgarden",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Topcinema",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "TukTukcima",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Tuniflix",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Viu",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Wecima",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Witanime",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "Youtube",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "cinemana",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "dima-toon",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "eseek",
+    "package": null,
+    "source_class": null,
+    "source_repo": "re-3arabi"
+  },
+  {
+    "name": "AnimeJlProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "AnimeflvIOProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "AnimeflvProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "AreaDocumentalProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "CablevisionHdProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "CineHdPlusProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "CinecalidadProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "ComamosRamenProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "CuevanaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "DeporTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "DocumaniaTVProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "DoramasFlixProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "DoramasYTProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "EntrepeliculasyseriesProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "EstrenosDoramasProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "HDFullProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "JKAnimeProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "LACartoonsProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "LaMovieProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "LatAnimeProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "MonoschinosProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "MundoDonghuaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "PeliculasFlixProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "PelispediaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "Pelisplus4KProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "PelisplusHDProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "PelisplusOrgProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "PlaydedeProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "PlayhubProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "ReyDonghuaProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "SeriesMetroProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "SeriesflixProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "SoloLatinoProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "StreamedProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  },
+  {
+    "name": "TioAnimeProvider",
+    "package": null,
+    "source_class": null,
+    "source_repo": "storm-ext"
+  }
+]

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_menu_title">AnimeUnity</string>
+    <string name="settings_build_info">Commit %1$s | Build %2$s</string>
+    <string name="settings_build_info_commit_only">Commit %1$s</string>
+    <string name="settings_menu_home_title">Home</string>
+    <string name="settings_menu_home_summary">Personalizza Home</string>
+    <string name="settings_menu_display_title">Preferenze</string>
+    <string name="settings_menu_display_summary">Schede e dettagli anime</string>
+    <string name="settings_menu_advanced_search_title">Ricerca avanzata</string>
+    <string name="settings_menu_advanced_search_summary">Ricerca Anime per criteri</string>
+    <string name="settings_open_action">Apri</string>
+
+    <string name="site_url_label">Link</string>
+    <string name="site_url_hint">Es: animeunity.so</string>
+    <string name="site_url_invalid">Link non valido. Controlla il formato.</string>
+    <string name="site_url_reset_action">Ripristina link predefinito</string>
+
+    <string name="settings_home_title">Home</string>
+    <string name="section_name_header">Sezione</string>
+    <string name="section_enabled_header">On</string>
+    <string name="section_limit_header">N.</string>
+    <string name="section_move_header">Ord.</string>
+
+    <string name="latest_episodes_switch_text">Ultimi episodi</string>
+    <string name="calendar_switch_text">Calendario</string>
+    <string name="ongoing_switch_text">In corso</string>
+    <string name="popular_switch_text">Popolari</string>
+    <string name="best_switch_text">I migliori</string>
+    <string name="upcoming_switch_text">In arrivo</string>
+    <string name="random_switch_text">Random</string>
+
+    <string name="latest_count_label">Ultimi episodi</string>
+    <string name="ongoing_count_label">In corso</string>
+    <string name="popular_count_label">Popolari</string>
+    <string name="best_count_label">I migliori</string>
+    <string name="upcoming_count_label">In arrivo</string>
+    <string name="random_count_label">Random</string>
+
+    <string name="settings_display_title">Preferenze</string>
+    <string name="settings_advanced_search_title">Ricerca avanzata</string>
+    <string name="unify_dub_sub_cards_switch_text">Scheda unica SUB/DUB</string>
+    <string name="dub_sub_switch_text">SUB / DUB</string>
+    <string name="display_options_title">Dettagli scheda</string>
+    <string name="episode_number_switch_text">Numero episodio</string>
+    <string name="score_switch_text">Valutazione</string>
+    <string name="advanced_search_name_label">Nome</string>
+    <string name="advanced_search_name_hint">Nome anime</string>
+    <string name="advanced_search_count_hint">Risultati</string>
+    <string name="advanced_search_count_label">Risultati</string>
+    <string name="advanced_search_genre_label">Genere</string>
+    <string name="advanced_search_genre_hint">Genere</string>
+    <string name="advanced_search_year_label">Anno</string>
+    <string name="advanced_search_year_hint">Anno</string>
+    <string name="advanced_search_order_label">Ordina</string>
+    <string name="advanced_search_order_hint">Ordina</string>
+    <string name="advanced_search_status_label">Stato</string>
+    <string name="advanced_search_status_hint">Stato</string>
+    <string name="advanced_search_type_label">Tipo</string>
+    <string name="advanced_search_type_hint">Tipo</string>
+    <string name="advanced_search_season_label">Stagione</string>
+    <string name="advanced_search_season_hint">Stagione</string>
+    <string name="advanced_search_any_option">Qualsiasi</string>
+    <string name="advanced_search_clear_action">Cancella valore</string>
+
+    <string name="move_up_action">Sposta su</string>
+    <string name="move_down_action">Sposta giu</string>
+    <string name="save_text">Salva</string>
+    <string name="settings_saved">Impostazioni salvate. Riavvia l\'applicazione per applicarle</string>
+    <string name="settings_restart_title">Riavvia applicazione</string>
+    <string name="settings_saved_restart_message">Impostazioni salvate. Vuoi riavviare l\'applicazione ora per applicare subito le modifiche?</string>
+    <string name="site_url_fallback_restart_message">Link non valido: verra usato quello predefinito. Vuoi riavviare l\'applicazione ora per applicare subito le modifiche?</string>
+    <string name="settings_feedback_button">Segnalazioni e Suggerimenti</string>
+    <string name="settings_feedback_title">Segnalazioni e Suggerimenti</string>
+    <string name="settings_feedback_message">Vuoi segnalare un Problema o vuoi suggerire un Miglioramento?</string>
+    <string name="settings_feedback_problem_highlight">Problema</string>
+    <string name="settings_feedback_suggestion_highlight">Miglioramento</string>
+    <string name="settings_feedback_problem_action">Segnala un Problema</string>
+    <string name="settings_feedback_suggestion_action">Suggerisci un Miglioramento</string>
+    <string name="settings_feedback_cancel">Annulla</string>
+    <string name="settings_feedback_unavailable">Impossibile aprire GitHub in questo momento.</string>
+    <string name="settings_reset_button">Ripristina valori predefiniti</string>
+    <string name="settings_reset_title">Ripristina impostazioni</string>
+    <string name="settings_reset_message">Vuoi ripristinare tutti i valori di AnimeUnity a quelli predefiniti?</string>
+    <string name="settings_reset_confirm">Ripristina</string>
+    <string name="settings_reset_cancel">Annulla</string>
+    <string name="settings_reset_restart_message">Impostazioni ripristinate. Vuoi riavviare l\'applicazione ora per applicare subito i valori predefiniti?</string>
+    <string name="restart_now">Riavvia</string>
+    <string name="restart_later">Piu tardi</string>
+    <string name="restart_unavailable">Impossibile riavviare automaticamente l\'app. Chiudila e riaprila manualmente.</string>
+</resources>
