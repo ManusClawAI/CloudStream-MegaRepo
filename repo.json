@@ -1,0 +1,8 @@
+{
+    "name": "CloudStream MegaRepo — 352 Extensions",
+    "description": "The ultimate CloudStream extension repository with 352 unique extensions from 31 source repos. No duplicates.",
+    "manifestVersion": 1,
+    "pluginLists": [
+        "https://raw.githubusercontent.com/ManusClawAI/CloudStream-MegaRepo/builds/plugins.json"
+    ]
+}

@@ -1,47 +1,59 @@
-# CloudStream MegaRepo
+# CloudStream MegaRepo — 352 Extensions
 
-The ultimate CloudStream extension repository — **352 extensions** from **31 source repos** combined into one.
+The ultimate CloudStream extension repository — **352 unique extensions** from **31 source repos** combined into one. No duplicates.
 
-## Source Repos (352 extensions from these)
-
-- **AniyomiCompatExtension** (1 extensions)
-- **Arabico** (9 extensions)
-- **CSX** (7 extensions)
-- **CloudX** (15 extensions)
-- **CuxPlug** (3 extensions)
-- **GermanProviders** (21 extensions)
-- **IndoStream** (26 extensions)
-- **ItalianProvider** (17 extensions)
-- **Kekik-cloudstream** (42 extensions)
-- **Luna712-CloudStream-Extensions** (2 extensions)
-- **MegaRepo** (1 extensions)
-- **NetMirror-Extension** (1 extensions)
-- **Pitipitii** (1 extensions)
-- **Redowan-CloudStream** (17 extensions)
-- **ReflexRepo** (3 extensions)
-- **cartoonyrepo** (11 extensions)
-- **cinephile** (4 extensions)
-- **cloudstream-extensions-uk** (21 extensions)
-- **cs-Karma** (37 extensions)
-- **cs-darkdemon-extensions** (14 extensions)
-- **doGiorsHadEnough** (17 extensions)
-- **extensions** (3 extensions)
-- **lietrepo** (11 extensions)
-- **re-3arabi** (33 extensions)
-- **storm-ext** (35 extensions)
-
-
-## Installation
+## 📥 Add to CloudStream
 
 1. Open CloudStream app
-2. Go to Settings → Extensions → Add repository
+2. Go to **Settings → Extensions → Add repository**
 3. Enter: `https://github.com/ManusClawAI/CloudStream-MegaRepo`
 4. Install the extensions you want
 
-## Stats
-- **Total extensions:** 352
-- **Source repos:** 25
-- **Duplicates removed:** 21
+## 📊 Stats
+
+| | Count |
+|---|---|
+| Total source repos scanned | 34 |
+| Successfully cloned | 31 |
+| Total extension modules found | 373 |
+| Duplicates removed | 21 |
+| **Unique extensions in this repo** | **352** |
+
+## 🌍 Source Repos
+
+| Repo | Extensions |
+|------|-----------|
+| recloudstream/extensions (official) | 5 |
+| phisher98/cloudstream-extensions-phisher | ~40 |
+| SaurabhKaperwan/CSX | 7 |
+| Asm0d3usX/CloudX | 14 |
+| aymanbest/Arabico | 9 |
+| redblacker8/storm-ext | ~30 |
+| doGior/doGiorsHadEnough | ~12 |
+| keyiflerolsun/Kekik-cloudstream | ~10 |
+| daarkdemon/cs-darkdemon-extensions | ~15 |
+| CakesTwix/cloudstream-extensions-uk | ~22 |
+| ...and 21 more repos | ... |
+
+## 📁 Structure
+
+```
+CloudStream-MegaRepo/
+├── repo.json                    ← CloudStream repository manifest
+├── settings.gradle.kts          ← Auto-includes all extension dirs
+├── build.gradle.kts             ← Root build file (CloudStream plugin)
+├── gradle/                      ← Gradle wrapper
+├── extensions.json              ← Metadata for all 352 extensions
+├── ExtensionName1/
+│   ├── build.gradle.kts         ← Extension config
+│   └── src/                     ← Kotlin source code
+├── ExtensionName2/
+│   └── ...
+└── ... (352 extension directories)
+```
 
 ## How This Repo Was Made
-Automatically merged from 34 CloudStream extension repositories listed on [cloudstream-apk.com](https://cloudstream-apk.com/cloudstream-repositories-extensions/).
+
+Automatically merged from 34 CloudStream extension repositories listed on [cloudstream-apk.com](https://cloudstream-apk.com/cloudstream-repositories-extensions/). Each source repo was cloned, all extension modules extracted, deduplicated by package name, and combined into this single mega repo.
+
+Built with ❤️ by ManusClawAI
